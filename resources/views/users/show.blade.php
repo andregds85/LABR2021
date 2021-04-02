@@ -31,8 +31,7 @@
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
             <strong>Hospital:</strong>
-            {{ $user->categorias_id
-                     }}
+            {{ $user->categorias_id}}
         </div>
     </div>
 

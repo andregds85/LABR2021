@@ -9,9 +9,10 @@ use App\Http\Controllers\CategoriaController;
 use App\Http\Controllers\PacienteController;
 use App\Http\Controllers\HospitalController;
 use App\Http\Controllers\soudohospital;
-use App\Http\Controllers\MapasController;
 use App\Http\Controllers\MacroController;
 use App\Http\Controllers\ManualController;
+use App\Http\Controllers\setoresController;
+
 use App\Http\Controllers\macro;
 
 
@@ -37,6 +38,8 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('mapas', MapasController::class);
     Route::resource('manual', ManualController::class);
     Route::resource('macro', macro::class);
+    Route::resource('setores', setoresController::class);
+
 
 
     Route::get('import_exportpacie', 'App\Http\Controllers\Import_Export_ControllerPacie@importExport');

@@ -30,7 +30,6 @@
     <form action="{{ route('pacientes.store') }}" method="POST">
     	@csrf
 
-<!-- chama  a tabela categorias dentro da tabela pacientes -->
 
 <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-12">

@@ -38,7 +38,7 @@
                     use App\Models\Categoria;
                     use App\Models\Pacientes;
                     $tabela = categoria::all();
-                 
+
                     $m=Auth::user()->macro;
                     $itensP = Categoria::where('macro',$m)->get();
                  ?>
@@ -73,7 +73,7 @@
             </div>
 
 
-            <div class="row">  
+            <div class="row">
              <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
 		            <strong>Cns:</strong>
@@ -82,8 +82,8 @@
 		    </div>
             </div>
 
-            
-            <div class="row">  
+
+            <div class="row">
              <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
 		            <strong>Nome do Usuário</strong>
@@ -93,7 +93,7 @@
             </div>
 
 
-            <div class="row">  
+            <div class="row">
              <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
 		            <strong>Municipio</strong>
@@ -103,7 +103,7 @@
             </div>
 
 
-            <div class="row">  
+            <div class="row">
              <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
 		            <strong>Data da Solicitação</strong>
@@ -112,75 +112,75 @@
 		    </div>
             </div>
 
-             
-            <div class="row">  
+
+            <div class="row">
              <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
 		            <strong>Unidade Desejada</strong>
 		            <input type="text" name="unidadedesejada" value="{{ $paciente->unidadedesejada }}" class="form-control" placeholder="unidadedesejada">
 		        </div>
 		    </div>
-            </div>   
-    
- 
+            </div>
 
-            <div class="row">  
+
+
+            <div class="row">
              <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
 		            <strong>Código </strong>
 		            <input type="text" name="codigo" value="{{ $paciente->codigo }}" class="form-control" placeholder="codigo">
 		        </div>
 		    </div>
-            </div>   
+            </div>
 
-        <div class="row">        
+        <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
               <strong>Observacao 1 :</strong>
                 <textarea class="form-control" style="height:150px" name="observacao1"  placeholder="Observacao 1">{{ $paciente->observacao1 }}</textarea>
             </div>
-        </div>   
-        </div>   
+        </div>
+        </div>
 
 
-        <div class="row">        
+        <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
               <strong>Observacao 2 :</strong>
                 <textarea class="form-control" style="height:150px" name="observacao2"  placeholder="Observacao 2">{{ $paciente->observacao2 }}</textarea>
             </div>
-        </div>   
-        </div>   
+        </div>
+        </div>
 
 
-        <div class="row">        
+        <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
               <strong>Observacao 3 :</strong>
                 <textarea class="form-control" style="height:150px" name="observacao3"  placeholder="Observacao 3">{{ $paciente->observacao3 }}</textarea>
             </div>
-        </div>   
-        </div>   
+        </div>
+        </div>
 
 
-        <div class="row">        
+        <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
               <strong>Observacao 4 :</strong>
                 <textarea class="form-control" style="height:150px" name="observacao4"  placeholder="Observacao 4">{{ $paciente->observacao4 }}</textarea>
             </div>
-        </div>   
-        </div>   
+        </div>
+        </div>
 
 
-        <div class="row">        
+        <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
               <strong>Observacao 5 :</strong>
                 <textarea class="form-control" style="height:150px" name="observacao5"  placeholder="Observacao 5">{{ $paciente->observacao5 }}</textarea>
             </div>
-        </div>   
-        </div>   
+        </div>
+        </div>
 
 
         <fieldset class="form-group">
@@ -201,7 +201,7 @@
         </div>
         </div>
     </div>
-  </fieldset> 
+  </fieldset>
 
 
   <fieldset class="form-group">
@@ -209,7 +209,7 @@
       <legend class="col-form-label col-sm-2 pt-0">Vizualização</legend>
       <div class="col-sm-10">
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="label" id="Vizualizacao" value="1" checked>
+          <input class="form-check-input" type="radio" name="Vizualizacao" id="Vizualizacao" value="1" checked>
           <label class="form-check-label" for="gridRadios1">
            SIM
           </label>
@@ -222,7 +222,7 @@
         </div>
         </div>
     </div>
-  </fieldset> 
+  </fieldset>
 
 		    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
 		      <button type="submit" class="btn btn-primary">Atualizar</button>
